@@ -9,6 +9,9 @@ Uninstall-WindowsFeature -Name Windows-Defender
 echo " " 
 write-host -foregroundcolor YELLOW -nonewline "    Hecho. Reinicio Pendiente. "
 read-host -prompt "Presiona una tecla para continuar o CTRL+C para salir."
+#
+# ---------------------------------------------------
+#
 clear
 echo " " 
 write-host -BackgroundColor RED "2.- Descativación del UAC. Control de Cuentas de Usuario. "
@@ -21,6 +24,9 @@ echo " "
 write-host -foregroundcolor YELLOW -nonewline "    Hecho. Reinicio Pendiente. "
 read-host -prompt "Presiona una tecla para continuar o CTRL+C para salir."
 cd $Dir
+#
+# ---------------------------------------------------
+#
 clear
 echo " " 
 write-host -BackgroundColor RED "3.- Descativación del FIREWALL. "
@@ -30,6 +36,9 @@ Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False
 echo " " 
 write-host -foregroundcolor YELLOW -nonewline "    Hecho. "
 read-host -prompt "Presiona una tecla para continuar o CTRL+C para salir."
+#
+# ---------------------------------------------------
+#
 clear
 echo " " 
 write-host -BackgroundColor RED "4.- Cambio de nombre al Servidor. "
@@ -39,6 +48,9 @@ Rename-Computer -NewName Server16 -force -Confirm:$False
 echo " " 
 write-host -foregroundcolor YELLOW -nonewline "    Hecho. Reinicio Pendiente. " 
 read-host -prompt "Presiona una tecla para continuar o CTRL+C para salir."
+#
+# ---------------------------------------------------
+#
 clear
 echo " " 
 write-host -BackgroundColor RED "5.- Desactivación protocolo de RED IPv6. "
@@ -53,6 +65,9 @@ if ( !$Terminado.Enabled )
    write-host -foregroundcolor YELLOW -nonewline "    Hecho. Preferible Reinicio. " 
    read-host -prompt "Presiona una tecla para continuar o CTRL+C para salir."
   } 
+#
+# ---------------------------------------------------
+#
 clear
 echo " "
 write-host -BackgroundColor RED "5.- Establecer Dirección IPv4 Estática. "
@@ -66,6 +81,9 @@ Set-DnsClientServerAddress -InterfaceIndex (Get-NetAdapter).InterfaceIndex -Serv
 echo " " 
 write-host -foregroundcolor YELLOW -nonewline "    Hecho. " 
 read-host -prompt "Presiona una tecla para continuar o CTRL+C para salir." 
+#
+# ---------------------------------------------------
+#
 clear
 clear
 echo " "
