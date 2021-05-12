@@ -85,7 +85,6 @@ read-host -prompt "Presiona una tecla para continuar o CTRL+C para salir."
 # ---------------------------------------------------
 #
 clear
-clear
 echo " "
 write-host -backgroundcolor Blue -foregroundcolor YELLOW "   Configuración inicial. "
 echo " " 
@@ -104,3 +103,7 @@ echo " "
 write-host -ForegroundColor Red "       Se procede al REINICIO DEL SISTEMA " -NoNewline
 read-host -Prompt " "
 restart-computer -Confirm:$False
+#
+# ------------------------------------------------
+#
+clear

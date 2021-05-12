@@ -152,7 +152,7 @@ switch($inp){
   Read-Host "Pulsa cualquier tecla para continuar..."
   write-host " "
   reg add hklm\system\currentcontrolset\services\tcpip6\parameters /v DisabledComponents /t REG_DWORD /d 0xFF /f
-  Get-NetAdapterBinding -ComponentID "ms_tcpip6" | disable-NetAdapterBinding -ComponentID "ms_tcpip6" –PassThru
+  Get-NetAdapterBinding -ComponentID "ms_tcpip6" | disable-NetAdapterBinding -ComponentID "ms_tcpip6" –PassThru > $Nul
   write-host " "
   write-host " "
   write-host -ForegroundColor Green "Se ha deshabilitado el protocolo iPv6 correctamente"
@@ -184,6 +184,8 @@ switch($inp){
   Read-Host "Pulsa cualquier tecla para continuar..."
   write-host " "
   $ipestatica = read-host "Introduce una dirección estática"
+  $puertaenlace = read-host "Introduce un gateway"
+  $serverdns = read-host "Introduce un servidor DNS"
      if ($ipestatica -match "^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$" )
       {   
         if ([ipaddress]::TryParse(($ipestatica),[ref][ipaddress]::Loopback))  
@@ -194,8 +196,7 @@ switch($inp){
                 -Name EnableDHCP -Value 0 -PassThru -Force -Confirm:$False
                 Remove-NetIpAddress -InterfaceIndex (Get-NetAdapter).InterfaceIndex -AddressFamily IPv4 -Confirm:$False -PassThru
                 Remove-NetRoute -InterfaceIndex (Get-NetAdapter).InterfaceIndex -AddressFamily IPv4 -Confirm:$False -PassThru
-            $puertaenlace = read-host "Introduce un gateway"
-            $serverdns = read-host "Introduce un servidor DNS"
+
                 New-NetIpAddress -InterfaceIndex (Get-NetAdapter).InterfaceIndex -IpAddress $ipestatica -PrefixLength 24 -DefaultGateway $puertaenlace -AddressFamily IPv4 -Confirm:$False
                 Set-DnsClientServerAddress -InterfaceIndex (Get-NetAdapter).InterfaceIndex -ServerAddresses $serverdns
             write-host " "

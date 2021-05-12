@@ -4,7 +4,7 @@ if ($Cadena -match "^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$" )
     {
         if([ipaddress]::TryParse(($Cadena),[ref][ipaddress]::Loopback))
         {
-            echo "La dirección IP es correcta"
+            echo "La direcció IP es correcta"
         }
  else
         {
