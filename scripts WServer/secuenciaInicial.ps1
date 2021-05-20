@@ -253,6 +253,8 @@ switch($inp){
         8 {
         clear
         Write-Host -ForegroundColor yellow "Gracias por confiar en Josico Informática S.L"
+        start-sleep -Seconds 3
+        clear
         exit
         }
   }

@@ -1,0 +1,87 @@
+﻿clear
+write-host -Foregroundcolor Yellow "                                                                                                                ____                   "
+write-host -Foregroundcolor Yellow "                                                                                                               /\___\                  "
+write-host -Foregroundcolor Yellow "                                                                                                               \/___/                  "
+write-host -Foregroundcolor Yellow " ______     ______     __   __     ______   __     ______     __  __     ______     ______     ______     __     ______     __   __    "
+write-host -Foregroundcolor Yellow "/\  ___\   /\  __ \   /\  -.\ \   /\  ___\ /\ \   /\  ___\   /\ \/\ \   /\  == \   /\  __ \   /\  ___\   /\ \   /\  __ \   /\  -.\ \   "
+write-host -Foregroundcolor Yellow "\ \ \____  \ \ \/\ \  \ \ \-.  \  \ \  __\ \ \ \  \ \ \__ \  \ \ \_\ \  \ \  __<   \ \  __ \  \ \ \____  \ \ \  \ \ \/\ \  \ \ \-.  \  "
+write-host -ForegroundColor Yellow " \ \_____\  \ \_____\  \ \_\\ \_\  \ \_\    \ \_\  \ \_____\  \ \_____\  \ \_\ \_\  \ \_\ \_\  \ \_____\  \ \_\  \ \_____\  \ \_\\ \_\ "
+write-host -ForegroundColor Yellow "  \/_____/   \/_____/   \/_/ \/_/   \/_/     \/_/   \/_____/   \/_____/   \/_/ /_/   \/_/\/_/   \/_____/   \/_/   \/_____/   \/_/ \/_/ "
+write-host -ForegroundColor Yellow "                                                                                                                                       "
+write-host -ForegroundColor Yellow " ______     ______     __   __     ______   ______     ______     __         ______     _____     ______     ______                    "
+write-host -ForegroundColor Yellow "/\  ___\   /\  __ \   /\  -.\ \   /\__  _\ /\  == \   /\  __ \   /\ \       /\  __ \   /\  __-.  /\  __ \   /\  == \                   "
+write-host -ForegroundColor Yellow "\ \ \____  \ \ \/\ \  \ \ \-.  \  \/_/\ \/ \ \  __<   \ \ \/\ \  \ \ \____  \ \  __ \  \ \ \/\ \ \ \ \/\ \  \ \  __<                   "
+write-host -ForegroundColor Yellow " \ \_____\  \ \_____\  \ \_\\ \_\    \ \_\  \ \_\ \_\  \ \_____\  \ \_____\  \ \_\ \_\  \ \____-  \ \_____\  \ \_\ \_\                 "
+write-host -ForegroundColor Yellow "  \/_____/   \/_____/   \/_/ \/_/     \/_/   \/_/ /_/   \/_____/   \/_____/   \/_/\/_/   \/____/   \/_____/   \/_/ /_/                 "
+write-host -ForegroundColor Yellow "                                                                                                                                       "
+write-host -ForegroundColor Yellow " _____     ______        _____     ______     __    __     __     __   __     __     ______                                            "
+write-host -ForegroundColor Yellow "/\  __-.  /\  ___\      /\  __-.  /\  __ \   /\  -./  \   /\ \   /\  -.\ \   /\ \   /\  __ \                                           "
+write-host -ForegroundColor Yellow "\ \ \/\ \ \ \  __\      \ \ \/\ \ \ \ \/\ \  \ \ \-./\ \  \ \ \  \ \ \-.  \  \ \ \  \ \ \/\ \                                          "
+write-host -ForegroundColor Yellow " \ \____-  \ \_____\     \ \____-  \ \_____\  \ \_\ \ \_\  \ \_\  \ \_\\ \_\  \ \_\  \ \_____\                                         "
+write-host -ForegroundColor Yellow "  \/____/   \/_____/      \/____/   \/_____/   \/_/  \/_/   \/_/   \/_/ \/_/   \/_/   \/_____/                                         "
+write-host -ForegroundColor Yellow "                                                                                                                                       "
+read-host "Pulsa una tecla para empezar...    "
+clear
+write-host ""
+write-host "Cargando las características..."
+write-host "0 %                                "
+start-sleep -Seconds 0.7
+clear
+write-host ""
+write-host "Cargando las características"
+write-host -BackgroundColor Green "27 %       "
+start-sleep -Seconds 0.7
+clear
+write-host ""
+write-host "Cargando las características."
+write-host -BackgroundColor Green "58 %                  "
+start-sleep -Seconds 1
+clear
+write-host ""
+write-host "Cargando las características."
+write-host -BackgroundColor Red "70% - ERROR       X                "
+start-sleep -Seconds 1
+write-host ""
+write-host ""
+read-host "Pulsa una tecla para comprobar el estado de tu disco..."
+tree 'C:/Program Files'
+Start-Sleep -Seconds 1
+clear
+write-host "Es broma, vamos al menú"
+read-host "Pulsa una tecla para empezar... "
+clear
+write-host  "                                                                                                                ____                   "
+write-host  "                                                                                                               /\___\                  "
+write-host  "                                                                                                               \/___/                  "
+write-host  " ______     ______     __   __     ______   __     ______     __  __     ______     ______     ______     __     ______     __   __    "
+write-host  "/\  ___\   /\  __ \   /\  -.\ \   /\  ___\ /\ \   /\  ___\   /\ \/\ \   /\  == \   /\  __ \   /\  ___\   /\ \   /\  __ \   /\  -.\ \   "
+write-host  "\ \ \____  \ \ \/\ \  \ \ \-.  \  \ \  __\ \ \ \  \ \ \__ \  \ \ \_\ \  \ \  __<   \ \  __ \  \ \ \____  \ \ \  \ \ \/\ \  \ \ \-.  \  "
+write-host  " \ \_____\  \ \_____\  \ \_\\ \_\  \ \_\    \ \_\  \ \_____\  \ \_____\  \ \_\ \_\  \ \_\ \_\  \ \_____\  \ \_\  \ \_____\  \ \_\\ \_\ "
+write-host  "  \/_____/   \/_____/   \/_/ \/_/   \/_/     \/_/   \/_____/   \/_____/   \/_/ /_/   \/_/\/_/   \/_____/   \/_/   \/_____/   \/_/ \/_/ "
+start-sleep -Seconds 0.7
+write-host  "                                                                                                                                       "
+write-host  " ______     ______     __   __     ______   ______     ______     __         ______     _____     ______     ______                    "
+write-host  "/\  ___\   /\  __ \   /\  -.\ \   /\__  _\ /\  == \   /\  __ \   /\ \       /\  __ \   /\  __-.  /\  __ \   /\  == \                   "
+write-host  "\ \ \____  \ \ \/\ \  \ \ \-.  \  \/_/\ \/ \ \  __<   \ \ \/\ \  \ \ \____  \ \  __ \  \ \ \/\ \ \ \ \/\ \  \ \  __<                   "
+write-host  " \ \_____\  \ \_____\  \ \_\\ \_\    \ \_\  \ \_\ \_\  \ \_____\  \ \_____\  \ \_\ \_\  \ \____-  \ \_____\  \ \_\ \_\                 "
+write-host  "  \/_____/   \/_____/   \/_/ \/_/     \/_/   \/_/ /_/   \/_____/   \/_____/   \/_/\/_/   \/____/   \/_____/   \/_/ /_/                 "
+write-host  "                                                                                                                                       "
+start-sleep -Seconds 0.7
+write-host  " _____     ______        _____     ______     __    __     __     __   __     __     ______                                            "
+write-host  "/\  __-.  /\  ___\      /\  __-.  /\  __ \   /\  -./  \   /\ \   /\  -.\ \   /\ \   /\  __ \                                           "
+write-host  "\ \ \/\ \ \ \  __\      \ \ \/\ \ \ \ \/\ \  \ \ \-./\ \  \ \ \  \ \ \-.  \  \ \ \  \ \ \/\ \                                          "
+write-host  " \ \____-  \ \_____\     \ \____-  \ \_____\  \ \_\ \ \_\  \ \_\  \ \_\\ \_\  \ \_\  \ \_____\                                         "
+write-host  "  \/____/   \/_____/      \/____/   \/_____/   \/_/  \/_/   \/_/   \/_/ \/_/   \/_/   \/_____/                                         "
+write-host  "                                                                                                                                       "
+write-host ""
+write-host ""
+write-host ""
+start-sleep -Seconds 0.7
+write-host -ForegroundColor Yellow "1. ACTIVE DIRECTORY Y DNS"
+Write-Host -ForegroundColor Yellow "2. PROMOVER A CONTROLADOR DE DOMINIO"
+Write-Host -ForegroundColor Yellow "3. INSTALAR Y CONFIGURAR DNS"
+Write-Host -ForegroundColor Yellow "4. INSTALAR Y CONFIGURAR DHCP"
+write-host -ForegroundColor Yellow "X. SALIR"
+write-host " "
+write-host " "
+read-host "Pulsa un botón para comenzar... "
