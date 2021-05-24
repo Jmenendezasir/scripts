@@ -32,7 +32,7 @@ $contra = read-host -AsSecureString "Introduce la contraseña de administrador..
     Install-ADDSForest -DomainName "Midominio.local" -DomainNetBiosName "Midominio" -SafeModeAdministratorPassword (ConvertTo-SecureString -string $contra -AsPlainText -Force) -DomainMode WinThreshold -ForestMode WinThreshold -InstallDNS:$True -Confirm:$false
     echo " " 
     write-host -foregroundcolor Green -nonewline "Se ha promovido a controlador de dominio correctamente..."
-    read-host " Pulsa una tecla para continuar..."
+    read-host " Reinicia el equipo para continuar..."
     clear
 
 #Instalación de servidor DNS
